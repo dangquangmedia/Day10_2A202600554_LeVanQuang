@@ -1,0 +1,58 @@
+{
+  "total_input_rows": 23,
+  "total_output_rows": 23,
+  "operations": [
+    {
+      "operation": "drop_latest_records",
+      "rows": 2,
+      "paper_ids": [
+        "10.21203/rs.3.rs-9882260/v1",
+        "10.54254/2753-8818/2026.dl34055"
+      ]
+    },
+    {
+      "operation": "blank_summary",
+      "rows": 3,
+      "paper_ids": [
+        "10.22214/ijraset.2026.82233",
+        "10.1093/sleep/zsag091.0346",
+        "10.32473/flairs.39.1.141782"
+      ]
+    },
+    {
+      "operation": "inject_summary_noise",
+      "rows": 3,
+      "paper_ids": [
+        "10.2139/ssrn.6761739",
+        "10.36085/jsai.v9i1.9632",
+        "10.4018/979-8-3373-5017-2.ch003"
+      ]
+    },
+    {
+      "operation": "truncate_title",
+      "rows": 2,
+      "paper_ids": [
+        "10.1093/sleep/zsag091.0346",
+        "10.32473/flairs.39.1.141782"
+      ]
+    },
+    {
+      "operation": "make_publication_date_stale",
+      "rows": 4,
+      "paper_ids": [
+        "10.2139/ssrn.6756498",
+        "10.2139/ssrn.6761739",
+        "10.36085/jsai.v9i1.9632",
+        "10.4018/979-8-3373-5017-2.ch003"
+      ]
+    },
+    {
+      "operation": "add_duplicate_rows",
+      "rows": 2,
+      "paper_ids": [
+        "10.22214/ijraset.2026.82233",
+        "10.1093/sleep/zsag091.0346"
+      ]
+    }
+  ]
+}

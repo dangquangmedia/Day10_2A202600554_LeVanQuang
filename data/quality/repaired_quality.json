@@ -1,0 +1,131 @@
+{
+  "report_name": "repaired_quality",
+  "total_rows": 23,
+  "total_checks": 13,
+  "failed_count": 0,
+  "passed": true,
+  "checks": [
+    {
+      "name": "row_count_positive",
+      "dimension": "volume",
+      "passed": true,
+      "observed": 23,
+      "threshold": "> 0"
+    },
+    {
+      "name": "required_schema",
+      "dimension": "schema",
+      "passed": true,
+      "observed": [
+        "abs_url",
+        "age_days",
+        "authors",
+        "authors_joined",
+        "categories",
+        "categories_joined",
+        "comment",
+        "paper_id",
+        "pdf_url",
+        "primary_category",
+        "published",
+        "summary",
+        "summary_chars",
+        "text_for_embedding",
+        "title",
+        "updated"
+      ],
+      "threshold": [
+        "paper_id",
+        "title",
+        "summary",
+        "published",
+        "updated",
+        "age_days",
+        "authors_joined",
+        "categories_joined",
+        "text_for_embedding"
+      ]
+    },
+    {
+      "name": "paper_id_not_empty",
+      "dimension": "completeness",
+      "passed": true,
+      "observed": 0,
+      "threshold": "0 empty values"
+    },
+    {
+      "name": "title_not_empty",
+      "dimension": "completeness",
+      "passed": true,
+      "observed": 0,
+      "threshold": "0 empty values"
+    },
+    {
+      "name": "summary_not_empty",
+      "dimension": "completeness",
+      "passed": true,
+      "observed": 0,
+      "threshold": "0 empty values"
+    },
+    {
+      "name": "published_not_empty",
+      "dimension": "validity",
+      "passed": true,
+      "observed": 0,
+      "threshold": "0 empty values"
+    },
+    {
+      "name": "authors_joined_not_empty",
+      "dimension": "completeness",
+      "passed": true,
+      "observed": 0,
+      "threshold": "0 empty values"
+    },
+    {
+      "name": "categories_joined_not_empty",
+      "dimension": "completeness",
+      "passed": true,
+      "observed": 0,
+      "threshold": "0 empty values"
+    },
+    {
+      "name": "text_for_embedding_not_empty",
+      "dimension": "completeness",
+      "passed": true,
+      "observed": 0,
+      "threshold": "0 empty values"
+    },
+    {
+      "name": "paper_id_unique",
+      "dimension": "uniqueness",
+      "passed": true,
+      "observed": 0,
+      "threshold": "0 duplicate paper_id"
+    },
+    {
+      "name": "summary_length",
+      "dimension": "validity",
+      "passed": true,
+      "observed": 1037,
+      "threshold": "min >= 40 chars"
+    },
+    {
+      "name": "freshness_threshold",
+      "dimension": "timeliness",
+      "passed": true,
+      "observed": 0,
+      "threshold": "age_days <= 180"
+    },
+    {
+      "name": "summary_length_distribution",
+      "dimension": "distribution",
+      "passed": true,
+      "observed": {
+        "min": 1037,
+        "mean": 1804.48,
+        "max": 2515
+      },
+      "threshold": "mean >= 60 chars"
+    }
+  ]
+}
